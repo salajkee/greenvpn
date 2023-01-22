@@ -1,0 +1,18 @@
+html,
+body {
+    height: 100%;
+    font-family: 'PPNeueMachina';
+    scroll-behavior: smooth;
+    background-color: #111E14;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+$green: #00B41D;
+$darkText: #111E14;
+$white-gray: #F2F2F2;
+$white: #FFFFFF;
