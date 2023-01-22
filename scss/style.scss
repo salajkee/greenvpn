@@ -500,6 +500,18 @@
     .container {
         padding: 0 15px;
     }
+    .header {
+        padding: 20px 0;
+    }
+    .primary {
+        margin-top: 10px;
+        &__center-img {
+            width: 220px;
+        }
+        &-bot {
+            padding: 80px 0;
+        }
+    }
 }
 
 @media only screen and (max-width: 1240px) {
