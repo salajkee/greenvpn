@@ -586,14 +586,22 @@ body {
   transition: all 0.3s;
   position: relative;
 }
-.footer__item-link::before {
-  content: url(../images/telegram.svg);
-  position: absolute;
-  bottom: -5px;
-  right: -55px;
+.footer__item-link .telegram-icon {
+  display: inline-block;
+  width: 36px;
+  height: 33px;
+  fill: #111E14;
+  stroke: #111E14;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .footer__item-link:hover {
   color: #F2F2F2;
+}
+.footer__item-link:hover .telegram-icon {
+  fill: #F2F2F2;
+  stroke: #F2F2F2;
 }
 .footer__contact-title {
   color: #111E14;
@@ -730,11 +738,9 @@ body {
   .footer__item-link {
     font-size: 26px;
   }
-  .footer__item-link::before {
-    right: -45px;
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
+  .footer__item-link .telegram-icon {
+    width: 30px;
+    height: 25px;
   }
   .footer__contact-title {
     font-size: 26px;
@@ -958,17 +964,8 @@ body {
   .footer__item-link br {
     display: none;
   }
-  .footer__item-link::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    background-color: #F2F2F2;
+  .footer__item-link .telegram-icon {
+    display: none;
   }
   .footer__contact-title {
     font-size: 18px;
